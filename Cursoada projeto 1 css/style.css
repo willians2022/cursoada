@@ -9,21 +9,23 @@ body {
     font-size: 1.4rem;
 }
 
-.content{
+.content {
     display: grid;
-    grid-template-areas:
-    ""
-    ""
-    ""
+    grid-template-areas:    
+    " . . . "
+    " hero . form"
+    " hero . from"
+    " . . . "
     ;
+    gap: 8.5rem;
 }
 
 main {
-    grid-area:hero;
+    grid-area:form;
 }
 
 aside{
-    grid-area: form;
+    grid-area:hero;
 }
 :root {
     font-size: 62.5%;
@@ -39,6 +41,7 @@ aside h1 {
 aside h1 span,
 main h2 span {
     color: #ff5678;
+    margin-left: 10px;
 }
 
 main {
@@ -47,6 +50,7 @@ main {
     border: 0.1rem solid rgba(0, 0, 0, 15);
     padding: 4.4rem 5.7rem;
     border-radius: 1.2rem;
+
 
 }
 
@@ -89,5 +93,14 @@ main footer a{
     margin-top: 1rem;
     font-size: 1.8rem;
     display: block;
+    text-align: center;
+    color: black;
 }
 
+img {    
+    height: auto; 
+    width: 720px; 
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
